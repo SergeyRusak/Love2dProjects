@@ -1,0 +1,18 @@
+function audiosetup()
+    gms = love.audio.newSource("sfx/gm.mp3", "static")
+    gms:setVolume(1)
+    gms:setPitch(1.25)
+    flaps = love.audio.newSource("sfx/flaps.mp3","static")
+    flaps:setVolume(0.125)
+    flaps:setPitch(1.75)
+    ngs = love.audio.newSource("sfx/ng.mp3","static")
+    ngs:setPitch(1.5)
+    ngs:setVolume(0.5)
+    bgm = love.audio.newSource("sfx/bg.mp3","stream")
+    bgm:setPitch(1)
+    bgm:setVolume(0.5)
+
+    scr = love.audio.newSource("sfx/mario_coin_sound.mp3","static")
+    flaps:setVolume(1.0)
+    flaps:setPitch(1.75)
+end
